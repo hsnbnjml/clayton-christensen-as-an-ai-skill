@@ -1,0 +1,83 @@
+---
+name: clay-review
+description: |
+  Use only when the user explicitly asks for a "Clay review" or "Clayton Christensen review" of a plan, decision, or process. Never apply it on your own initiative.
+---
+
+# Clay Review
+
+A critique of a plan, decision, process or approach, using Clayton Christensen's frameworks as lenses. The goal is to expose blind spots and help the user redirect, not to validate.
+
+Run only when the user explicitly calls this skill by name. Do not apply it to ordinary requests, drafts or plans, even if a critique would seem useful. When it is not invoked, behave normally.
+
+## Step 1: Confirm what is under review
+
+Identify the subject: a plan, decision, process, message, account approach, priority list, or something else. If it is unclear, ask one question and wait.
+
+## Step 2: Ground the critique in real context
+
+Before critiquing, use whatever real context is available: documents, data, or details the user has shared in the conversation. If the facts needed are not available, say what is missing and ask. Label anything you cannot verify as an assumption.
+
+## Step 3: Pick the lenses that fit
+
+Choose one to three lenses that genuinely apply. If none fits, say so plainly instead of forcing one.
+
+**1. Jobs to Be Done**
+- What progress is the customer (or user, or team) trying to make, and in what situation?
+- What are they "firing" when they hire this? What do they use today instead, including doing nothing?
+- Beyond the functional job, what are the emotional and social parts of it?
+- Are we designing around the job, or around our product, process or org chart?
+
+**2. Overserving and non-consumption (disruption)**
+- Are we adding effort, features or polish beyond what the customer can absorb or values?
+- Who is being ignored because they look too small, simple or unprofitable?
+- Is there a simpler, cheaper way to get the job done that we dismiss because it looks "worse"?
+- Who could serve those customers instead of us, and what would happen next?
+
+**3. Resources, Processes, Priorities**
+- Do we have the resources (people, skills, tools) to do this?
+- Do our existing processes fit it, or will they quietly reshape it into what we already do?
+- Do our priorities (what we measure, reward and say yes to first) support it, or will it lose every trade-off?
+
+**4. Deliberate vs. emergent strategy**
+- Is the plan built on assumptions that have not been tested yet?
+- What are the few assumptions that must be true for it to work, and how will we check them early?
+- What is happening on the ground that differs from the plan, and are we learning from it or ignoring it?
+
+**5. Resource allocation reveals real strategy**
+- Where are time, people and attention actually going, compared with what is said to matter?
+- What does the calendar, backlog or workload show is the real priority?
+
+**6. The marginal thinking trap**
+- Is "just this once" or "it's only a small exception" being used to justify something that becomes the norm?
+- Are we choosing what is cheapest now over what is right over time?
+
+**7. Theory before data**
+- What causes what here? Is the reasoning based on a causal mechanism, or on correlation and anecdote?
+- In what circumstances would this approach fail, and are we in one of them?
+
+## Step 4: Write the critique
+
+Use this shape, kept short:
+
+**The blind spot:** the strongest objection, in one or two sentences.
+
+**Lens:** which framework flags it and why it applies here.
+
+**Evidence:** the facts behind the critique. Mark assumptions as assumptions.
+
+**Cost of ignoring it:** what happens if nothing changes.
+
+**Options:** two or three distinct ways to redirect, one line each, with the main trade-off of each. Do not pick for the user unless asked.
+
+**Question back:** one question that pushes the user's thinking further.
+
+If more than one blind spot is serious, lead with the most important and list the others in one line each at the end.
+
+## Rules
+
+- No praise opener and no softening ("great plan, but..."). Be direct and respectful; critique the idea, not the person.
+- Do not roleplay Christensen or quote him. Use the frameworks, not the persona.
+- Never invent data, metrics or quotes. If the evidence is thin, say so.
+- Stay concise. A sharp critique beats a long one.
+- Reply in the language the user writes in.
