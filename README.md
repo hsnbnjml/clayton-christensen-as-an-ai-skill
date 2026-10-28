@@ -1,52 +1,56 @@
-# clayton-christensen-as-an-ai-skill
-Clayton Christensen's strategy frameworks (JTBD, disruption, resource allocation...) packaged as an AI agent skill — a repeatable, evidence-based critique of any plan, not a persona chatbot.
-His strategy frameworks — packaged as a repeatable AI critique skill.
+# Humans as AI Skills
 
-**Not a Christensen chatbot.** No persona, no roleplay, no quotes. Just the lenses, applied to whatever plan you are about to bet on.
+> Masters are scarce. Their methods are not.
 
-## What it does
+Each folder in this repo packages one expert human's frameworks as a self-contained AI agent skill — a structured, repeatable review process any agent can run. **Not persona chatbots.** No roleplay, no invented quotes. Every skill uses the human's *method*, applied to your actual context.
 
-You point it at a plan, decision, or process. It picks the 1–3 Christensen frameworks that genuinely apply, grounds the critique in your actual context, and surfaces the strongest blind spot — plus what it costs to ignore it.
+## The collection
 
-The goal is to redirect you, not to validate you.
+| Skill | Domain | The human | Invoke by |
+|-------|--------|-----------|-----------|
+| [`strat-clay`](skills/strat-clay/SKILL.md) | Strategy | Clayton Christensen | "Clay review" |
+| [`comm-minto`](skills/comm-minto/SKILL.md) | Communication | Barbara Minto | "Minto review" |
+| [`cs-murphy`](skills/cs-murphy/SKILL.md) | Customer Success | Lincoln Murphy | "Murphy review" |
+| [`proc-kraljic`](skills/proc-kraljic/SKILL.md) | Procurement | Peter Kraljic & Arjan van Weele | "Kraljic review" |
+| [`ops-grove`](skills/ops-grove/SKILL.md) | Operations & Management | Andy Grove & Eli Goldratt | "Grove review" |
+| [`support-dixon`](skills/support-dixon/SKILL.md) | Customer Support | Matthew Dixon, Nick Toman & Rick DeLisi | "Dixon review" |
 
-## The seven lenses
+**Example:** point an agent at a plan and say *"give me a Clay review of this"* — it picks the 1–3 Christensen lenses that genuinely apply, grounds the critique in your real workspace context, and surfaces the strongest blind spot, what it costs to ignore, and two or three ways to redirect. It will not pick for you unless asked.
 
-1. **Jobs to Be Done** — What progress is the customer trying to make, and are we designing around the job or around our product and org chart?
-2. **Overserving & non-consumption** — Are we adding more than the customer can absorb, and who are we ignoring because they look too small?
-3. **Resources, Processes, Priorities** — Can our resources do it, will our processes quietly reshape it, and will it lose every internal trade-off?
-4. **Deliberate vs. emergent strategy** — Which untested assumptions must be true, and what is reality already telling us?
-5. **Resource allocation reveals real strategy** — Where is time, money, and attention actually going, compared to what we say matters?
-6. **The marginal thinking trap** — Is "just this once" quietly becoming the norm, and are we choosing what is cheapest now over what is right over time?
-7. **Theory before data** — Is the reasoning based on a causal mechanism, or on correlation and anecdote — and in what circumstances would it fail?
+## Why "explicit invocation only"
 
-## Output format
+Every skill runs **only when you call it by name**. Ordinary requests stay ordinary — no skill hijacks them. This is built into every file's trigger and description.
 
-Every critique follows the same shape, kept short:
+## Shared anatomy
 
-- **The blind spot** — the strongest objection, in one or two sentences
-- **Lens** — which framework flags it and why it applies
-- **Evidence** — the facts behind the critique; assumptions labeled as assumptions
-- **Cost of ignoring it** — what happens if nothing changes
-- **Options** — two or three distinct ways to redirect, with the main trade-off of each
-- **Question back** — one question that pushes your thinking further
+All skills follow the same shape:
+
+1. **Trigger** — explicit invocation only
+2. **Confirm** the subject and the mode (review / design / learn / plan / coach / advise)
+3. **Ground** the work in real context (workspace files, records, connected tools) — mark any unverified claim as an assumption
+4. **Lenses** — the frameworks, as numbered test-questions; choose only those that genuinely apply
+5. **Structured output** — the finding, the lens that flags it, the evidence, the cost of ignoring it, distinct options with trade-offs, one question back
+6. **Rules** — no praise openers, no roleplay, no invented data, concise, reply in the user's language
 
 ## Install
 
-**Any LLM or agent** — copy [`SKILL.md`](SKILL.md) into your system prompt, custom instructions, or agent instructions. Adapt the trigger at the top to your platform.
+```bash
+git clone https://github.com/hsnbnjml/humans-as-ai-skills.git
+```
 
-**Vibe / skill-based agents** — drop the folder into your skills directory; the skill runs when invoked by name.
+Then copy any `skills/<name>/` folder into your agent's skills directory — the `folder/SKILL.md` format works with skill-based agents (OpenCode, Claude, and similar). For plain-LLM use, paste a skill's SKILL.md into custom instructions and adapt the trigger line to your platform.
 
-## Design rules
+## Package a human — contribution checklist
 
-- No praise openers and no softening ("great plan, but..."). Direct and respectful; critique the idea, not the person.
-- Frameworks, not persona. No roleplaying Christensen and no invented quotes.
-- Never invents data or metrics. If the evidence is thin, it says so.
-- Stays concise. A sharp critique beats a long one.
+1. Pick one human with clearly written frameworks (one anchor author; co-authors allowed in parentheses)
+2. Follow the shared anatomy above; name the skill `<domain>-<surname>`
+3. The description **must** say: use only when explicitly invoked, never on your own initiative
+4. Use the method, not the persona — no roleplay, no invented quotes or data
+5. Open a PR with the human added to the table above
 
 ## Credits
 
-The frameworks come from Clayton Christensen's work: *The Innovator's Dilemma*, *The Innovator's Solution*, *Competing Against Luck*, and *How Will You Measure Your Life?* This project is an independent application of those ideas and is not affiliated with or endorsed by the author or his estate.
+The frameworks belong to their authors: Christensen (*The Innovator's Dilemma*, *Competing Against Luck*, *How Will You Measure Your Life?*), Minto (*The Pyramid Principle*), Murphy (*Customer Success* with Mehta & Steinman) and the laws of SaaS customer success, Kraljic (*Purchasing Must Become Supply Management*) and van Weele (*Purchasing and Supply Chain Management*), Grove (*High Output Management*) and Goldratt (*The Goal*), Dixon, Toman & DeLisi (*The Effortless Experience*). These are independent applications of published ideas, not affiliated with or endorsed by the authors or their estates.
 
 ## License
 
