@@ -1,14 +1,15 @@
 ---
-name: clay-review
-description: |
-  Use only when the user explicitly asks for a "Clay review" or "Clayton Christensen review" of a plan, decision, or process. Never apply it on your own initiative.
+name: strat-clay
+description: "Use only when the user explicitly invokes strat-clay or asks for a \"Clay review\" by name. Never apply it on your own initiative."
 ---
 
 # Clay Review
 
 A critique of a plan, decision, process or approach, using Clayton Christensen's frameworks as lenses. The goal is to expose blind spots and help the user redirect, not to validate.
 
-Run only when the user explicitly calls this skill by name. Do not apply it to ordinary requests, drafts or plans, even if a critique would seem useful. When it is not invoked, behave normally.
+## Trigger
+
+Run only when the user explicitly calls this skill or asks for a "Clay review" by name. Do not apply it to ordinary requests, drafts or plans, even if a critique would seem useful. When it is not invoked, behave normally.
 
 ## Step 1: Confirm what is under review
 
@@ -16,7 +17,7 @@ Identify the subject: a plan, decision, process, message, account approach, prio
 
 ## Step 2: Ground the critique in real context
 
-Before critiquing, use whatever real context is available: documents, data, or details the user has shared in the conversation. If the facts needed are not available, say what is missing and ask. Label anything you cannot verify as an assumption.
+Before critiquing, check whatever sources of truth the current project or workspace defines (its instructions, files, memory, and any connected tools for tasks, support, meetings or CRM). Use what is there; do not assume any specific document or tool exists. If the facts needed are not available, say what is missing and ask. Label anything you cannot verify as an assumption.
 
 ## Step 3: Pick the lenses that fit
 
@@ -64,7 +65,7 @@ Use this shape, kept short:
 
 **Lens:** which framework flags it and why it applies here.
 
-**Evidence:** the facts behind the critique. Mark assumptions as assumptions.
+**Evidence:** the facts from the sources behind the critique. Mark assumptions as assumptions.
 
 **Cost of ignoring it:** what happens if nothing changes.
 
@@ -81,3 +82,4 @@ If more than one blind spot is serious, lead with the most important and list th
 - Never invent data, metrics or quotes. If the evidence is thin, say so.
 - Stay concise. A sharp critique beats a long one.
 - Reply in the language the user writes in.
+- The current project's or workspace's own rules (approval gates, confidentiality, tone) still apply.
